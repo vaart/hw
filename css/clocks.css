@@ -1,0 +1,31 @@
+	#hh{
+		float: left;
+		text-align: center;
+		font-size: 35vh;
+		color: white;
+	}
+	#mm{
+		float: left;
+		text-align: center;
+		font-size: 35vh;
+		color: white;
+	}
+	#ss{
+		float: left;
+		text-align: center;
+		font-size: 35vh;
+		color: white;
+	}
+	.colon{
+		float: left;
+		text-align: center;
+		font-size: 35vh;
+		color: white;
+	}
+	#clocks{
+		margin: 0 auto;
+		border: solid 3px black;
+		width: 70vw;
+		height: 50vh;
+		text-align: center;
+			}
