@@ -19,12 +19,6 @@ $(document).ready(function(){
 				if(hh<10){
 					hh="0"+hh;
 				}
-
-				if( hh<18 ){
-					$("body").css("background", "orange");
-				}else{
-					$("body").css("background", "black");
-				}
 					$("#ss").html( ss );
 					$("#mm").html( mm );
 					$("#hh").html( hh );
@@ -37,8 +31,18 @@ $(document).ready(function(){
 		clock();
 	$("#lightBoxTrigger").click(function(){
 		$("#clocks").fadeIn(500);
+		if( hh>19 ){
+					$("body").css("background", "black");
+					alert("Good Night!")
+				}else{
+					$("body").css("background", "orange");
+					alert("Good Afternoon!")
+				}
+		$("#lightBoxTrigger").fadeOut(100);
+		// $("#lightBoxTrigger").fadeOut(100);
 	});
 	$("#closeBtn").click(function(){
 		$("#clocks").fadeOut(500);
+		$("#lightBoxTrigger").fadeIn(100);
 	});
 });
