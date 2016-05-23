@@ -35,4 +35,10 @@ $(document).ready(function(){
 			}, 1000);
 		}
 		clock();
+	$("#lightBoxTrigger").click(function(){
+		$("#clocks").fadeIn(500);
+	});
+	$("#closeBtn").click(function(){
+		$("#clocks").fadeOut(500);
+	});
 });
